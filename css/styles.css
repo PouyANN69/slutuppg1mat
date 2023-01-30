@@ -1,0 +1,202 @@
+/* Setting the background color for the entire website */
+body {
+  background-color: #1E90FF; /* Bright blue */
+  margin: 0; /* remove default margins */
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Creating a grid layout for the website */
+/* Creating a grid layout for the website */
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px;  
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+/* Align recipe image to the left */
+/* Styling the recipe image */
+.card img {
+  position: absolute; /* position the image absolute */
+  left: 0; /* set the left property to 0 */
+  top: 10; /* set the top property to 0 */
+  max-width: 100%;
+  display: run-in;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 55%;
+}
+.card img:hover {
+  transform: scale(1.1); /* increase the scale of the image by 10% */
+  transition: transform 0.5s ease; /* transition effect */
+}
+
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+
+}
+.mogg{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  margin-left: 270px;
+  margin-top: -20px;
+  z-index: 1px;
+  top: 0;
+ 
+}
+.mogg img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  
+}
+.mogg img:hover {
+  transform: scale(1.1); /* increase the scale of the image by 10% */
+  transition: transform 0.5s ease; /* transition effect */
+}
+
+/* Align recipe text to the middle */
+.card {
+  text-align: center;
+  color: #fff;
+  font-family:'Times New Roman', Times, serif;
+
+}
+
+.card-content {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  text-align: center;
+  color: #fff;
+  font-family:'Times New Roman', Times, serif;
+
+}
+/* Defining the areas of the grid */
+.header {
+  grid-area: header;
+}
+#header h1{
+  font-family:'Times New Roman', Times, serif;
+  font-style:italic;
+  font-size: 40px;
+}
+
+
+.nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Styling the header */
+.header {
+  background-color: #0575E6; /* Cyber Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling the nav */
+.nav {
+  background-color: #0575E6; /* Cyber Blue */
+  color: white;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 20%;
+  margin-top: -80px;
+
+}
+.disabled {
+  color: gray;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+
+.nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+/* Styling the recipe card */
+.card {
+  background-color: #1E90FF;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styling the recipe title */
+.card h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #fff;
+}
+.header h1 {
+  color: #fff; /* white color */
+}
+
+
+/* Styling the recipe ingredients and instructions */
+.card ul, .card ol {
+  margin-top: 20px;
+}
+
+/* Styling the save recipe button */
+.card button {
+  background-color: #0575E6; /* Cyber Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling the footer */
+.footer {
+  background-color: #0575E6; /* Cyber Blue */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/*  Paragraph for the recipe */
+.card p{
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+h5{
+margin-bottom: 20px;
+}
+
+
+.recipe-image{
+max-width: 100%;
+display: block;
+margin: 0 auto;
+
+}
